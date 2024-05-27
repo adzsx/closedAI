@@ -1,0 +1,73 @@
+#input-number{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+}
+
+input{
+    background-color: #202020;
+    color: #ffffff;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #202020;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+
+
+#number_guess{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#img_guess{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+
+.conversation *{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+#can{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.img_btn{
+    color: #000000;
+    border: none;
+    background-color: #00ffff;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+#clr{
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#send{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

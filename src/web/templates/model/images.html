@@ -1,0 +1,24 @@
+{% extends "model/model.html" %}
+
+{% block head %}
+
+<script defer src="{{ url_for('static',filename='scripts/image.js') }}"></script>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="conversation" id="img_guess">
+        <p id="guess">My Guess: {{ guess }}</p>
+</div>
+
+<body onload="init()">
+        <canvas id="can" width="280" height="280" style="border:2px solid;border-color: #ffffff;"></canvas>
+
+        <button class="img_btn" id="send" onclick="exportCanvasData()">submit</button>
+        <button class="img_btn" id="clr" onclick="erase()">clear</button>
+</body>
+
+{% endblock %}

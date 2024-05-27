@@ -1,0 +1,20 @@
+{% extends "model/model.html" %}
+
+{% block head %}
+
+
+
+{% endblock %}
+
+
+{% block content %}
+<div class="conversation", id="number_guess">
+    <p>Your input: {{ input }}</p>
+    <p>My Guess: {{ guess }}</p>
+</div>
+
+<form id="input-number" action="/numbers" method="post">
+    <input type="text" name="number" id="number" placeholder="Send">
+</form>
+
+{% endblock %}

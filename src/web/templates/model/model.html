@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SuperChatGPT
+    </title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/model.css') }}">
+
+    {% block head %}
+    {% endblock %}
+
+    <script defer src="{{ url_for('static',filename='scripts/script.js') }}"></script>
+</head>
+<body>
+    <div class="bar" id="head">
+        <h id="title">SuperChatGPT</h>
+        <div id="models">
+            <a href="/numbers">Numbers</a>
+            <a href="/images">Images</a>
+        </div>
+
+
+        
+    </div>
+
+
+    {% block content %}
+    {% endblock %}
+
+
+    
+    <div class="bar" id="foot">
+        <p id="inc">ClosedAI Inc.&copy;</p>
+        <p>Created by Pierce and Adrian</p>
+    </div>
+</body>
+</html>
